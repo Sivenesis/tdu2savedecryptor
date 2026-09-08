@@ -1,5 +1,7 @@
 # Test Drive Unlimited 2 (TDU2) Save Game Tool
 
+MADE USING AI TOOLS, INCLUDING GEMINI 3.8 FLASH HIGH
+
 A complete, standalone, zero-dependency Python utility to decrypt, inspect, edit, and re-encrypt save game files (`DATA`, `KEYMAP`, `OPTIONS`) for **Test Drive Unlimited 2** (Eden Games).
 
 This tool converts proprietary binary XML (`XMBF`) save files into human-readable, easily editable JSON, and repacks modified JSON back into fully valid, encrypted game containers with correct chunk-level checksums and authentic footers.
@@ -17,7 +19,7 @@ This tool converts proprietary binary XML (`XMBF`) save files into human-readabl
 - **Automatic Profile Detection**: Auto-detects player profile names (e.g., `Player`, `MyProfile`) via cryptographic trial, folder hierarchy, or embedded metadata.
 - **Authentic Checksum Generation**: Recomputes Eden Games custom SHA-1 digests for every 4096-byte chunk, ensuring the game accepts saves without corruption warnings.
 - **Preserves Original Footers**: Automatically retains player online IDs and container footers.
-- **Built-In Quick Save Editor**: Directly modify money, casino coupons, licenses, player levels, road discovery, or clean car damage without manual JSON editing.
+- (BETA) **Built-In Quick Save Editor**: Directly modify money, casino coupons, licenses, player levels, road discovery, or clean car damage without manual JSON editing.
 
 ---
 
@@ -73,7 +75,7 @@ Open `DATA.json` in any text editor (VS Code, Notepad++, etc.) and edit fields d
 - `PlayerData.Garage`: Modify owned vehicles, performance upgrades, colors, and interior trims.
 - `PlayerData.PlayerLevels`: Adjust Racing, Collection, Social, and Cruising experience points.
 
-#### Method B: Built-in Command-Line Editor
+#### Method B: (BETA) Built-in Command-Line Editor
 Modify values directly on the encrypted save without opening JSON:
 ```powershell
 # Set cash balance to $50,000,000
@@ -214,3 +216,5 @@ For full details regarding methodologies, safety constraints, and attribution, s
 ## License
 
 This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+
+YOU CAN USE AND MODIFY THIS SCRIPT ANY WAY YOU WANT
